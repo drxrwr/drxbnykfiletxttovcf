@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proses Banyak File TXT ke VCF</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan file CSS -->
+</head>
+<body>
+    <h1>Proses Banyak File TXT ke VCF</h1>
+    
+    <div id="numberingContainer" class="question-container">
+        <p>Aktifkan Penomoran Kontak:</p>
+        <label class="switch">
+            <input type="checkbox" id="numberingToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <input type="file" id="file-input" multiple accept=".txt">
+    <input type="text" id="contactNameInput" placeholder="Nama Kontak" />
+    <button id="processFilesBtn">Proses File</button>
+
+    <div id="file-areas"></div>
+
+    <script src="script.js"></script> <!-- Menghubungkan file JavaScript -->
+</body>
+</html>
